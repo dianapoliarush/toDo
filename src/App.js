@@ -64,14 +64,16 @@ function App() {
       return;
     }
 
+    if (tasks.length === 0) {
+      return;
+    }
+
     setIsAllTasksDone(!isAllTasksDone);
 
-    if (tasks.length > 0) {
-      tasks.forEach((task) => {
-        task.done = isAllTasksDone;
-      });
-      setTasks(tasks);
-    }
+    tasks.forEach((task) => {
+      task.done = isAllTasksDone;
+    });
+    setTasks(tasks);
   };
 
   const deleteAllTasksHandler = (event) => {
