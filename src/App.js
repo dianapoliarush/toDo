@@ -60,11 +60,11 @@ function App() {
   const chooseAllTasksHandler = (event) => {
     event.preventDefault();
 
-    if (isAllTasksDone) {
+    if (tasks.length === 0) {
       return;
     }
 
-    if (tasks.length === 0) {
+    if (isAllTasksDone) {
       return;
     }
 
