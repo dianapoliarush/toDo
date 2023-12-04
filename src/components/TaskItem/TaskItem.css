@@ -1,0 +1,74 @@
+@import "../../App.css";
+
+.task-item {
+  background-color: #b7b7a4;
+  border-radius: 10px;
+  padding: 5px 9px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.4s linear;
+  height: auto;
+}
+
+.task-item svg {
+  height: 20px;
+  margin-right: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-name {
+  flex-grow: 1;
+  max-width: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+  line-height: 1;
+}
+
+.task-item span {
+  position: relative;
+}
+
+.task-item span::before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  height: 1px;
+  width: 0%;
+  background-color: var(--text-color);
+  transition: width 0.3s ease-in-out;
+}
+
+.task-item.done {
+  opacity: 0.4;
+}
+
+.task-item.done span::before {
+  width: 100%;
+}
+
+button.trash {
+  background: none;
+  border: none;
+  display: flex;
+  cursor: pointer;
+}
+button.trash svg {
+  height: 14px;
+}
+
+.task-item input {
+  border: 1px solid var(--background-color);
+  border-radius: 5px;
+  padding: 2px 4px;
+  outline: none;
+  width: 100%;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.task-item form {
+  width: 100%;
+}

@@ -1,38 +1,76 @@
-.App {
+:root {
+  --background-color: #718355;
+  --light-color: #97a97c;
+  --text-color: #e9f5db;
+  --btn-color: #cfe1b9;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Cormorant Garamond", serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.background {
+  position: absolute;
+  width: 100vw;
+  height: 30vh;
+  z-index: -1;
+  background: no-repeat center/cover url("./pxfuel\(2\).jpg");
+}
+
+main {
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 500px;
+  padding-top: 50px;
+}
+
+.title {
+  text-align: left;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+@media (max-width: 568px) {
+  main {
+    max-width: 400px;
+  }
+  .title {
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 450px) {
+  main {
+    max-width: 350px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 400px) {
+  main {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 350px) {
+  main {
+    max-width: 250px;
   }
 }

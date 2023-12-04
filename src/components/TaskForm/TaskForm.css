@@ -1,0 +1,44 @@
+@import "../../App.css";
+
+.task-form {
+  border: 3px solid var(--light-color);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  height: auto;
+  overflow: hidden;
+  white-space: pre-wrap;
+}
+
+.task-form__input {
+  background: none;
+  color: #fff;
+  border: 0;
+  padding: 0 8px;
+  display: block;
+  outline: none;
+  width: 100%;
+}
+
+.task-form__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.task-form__btn svg {
+  height: 16px;
+}
+
+.task-form__btns {
+  display: flex;
+}
+
+.task-form__btns button {
+  margin-right: 3px;
+}
