@@ -59,13 +59,16 @@ function App() {
 
   const chooseAllTasksHandler = (event) => {
     event.preventDefault();
-    const updatedTasks = tasks.map((task) => ({
-      ...task,
-      done: !isAllTasksDone,
-    }));
-
-    setTasks(updatedTasks);
     setIsAllTasksDone(!isAllTasksDone);
+
+    if (tasks.length > 0) {
+      const updatedTasks = tasks.map((task) => ({
+        ...task,
+        done: !isAllTasksDone,
+      }));
+
+      setTasks(updatedTasks);
+    }
   };
 
   const deleteAllTasksHandler = (event) => {
