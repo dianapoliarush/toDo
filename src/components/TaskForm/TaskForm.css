@@ -9,6 +9,7 @@
   height: auto;
   overflow: hidden;
   white-space: pre-wrap;
+  margin-top: 20px;
 }
 
 .task-form__input::placeholder {

@@ -65,27 +65,9 @@ main {
     max-width: 95vw;
   }
   .task-item {
-    padding: 10px 0;
+    margin-top: 15px;
   }
   .task-form {
-    padding: 12px;
+    margin-top: 40px;
   }
 }
-
-/* @media (max-width: 450px) {
-  main {
-    max-width: 350px;
-  }
-}
-
-@media (max-width: 400px) {
-  main {
-    max-width: 300px;
-  }
-}
-
-@media (max-width: 350px) {
-  main {
-    max-width: 250px;
-  }
-} */
