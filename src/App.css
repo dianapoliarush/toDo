@@ -37,7 +37,7 @@ body {
   width: 100vw;
   height: 30vh;
   z-index: -1;
-  background: no-repeat center/cover url("./pxfuel\(2\).jpg");
+  background: no-repeat center/cover url("./background.jpg");
 }
 
 main {
