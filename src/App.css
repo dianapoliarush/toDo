@@ -62,7 +62,13 @@ main {
 
 @media (max-width: 568px) {
   main {
-    max-width: 90vw;
+    max-width: 95vw;
+  }
+  .task-item {
+    padding: 10px 0;
+  }
+  .task-form {
+    padding: 12px;
   }
 }
 
