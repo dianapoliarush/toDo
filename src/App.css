@@ -64,10 +64,4 @@ main {
   main {
     max-width: 95vw;
   }
-  .task-item {
-    margin-top: 15px;
-  }
-  .task-form {
-    margin-top: 40px;
-  }
 }
