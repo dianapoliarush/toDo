@@ -12,7 +12,7 @@
 }
 
 .task-form__input::placeholder {
-  color: #ffff;
+  color: #000;
   font-size: 24px;
   font-family: "Cormorant Garamond", serif;
 }
